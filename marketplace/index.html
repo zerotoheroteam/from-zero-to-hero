@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agent Marketplace — From Zero to Hero</title>
+<meta name="description" content="F02H Agent Marketplace — focused AI agents built for specific jobs. Pick the role you need and start moving.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#4de082",
+          "primary-container": "#00a755",
+          "secondary": "#eec058",
+          "secondary-container": "#8e6a00",
+          "surface": "#131313",
+          "surface-container-low": "#1c1b1b",
+          "surface-container-lowest": "#0e0e0e",
+          "surface-container-high": "#2a2a2a",
+          "surface-container": "#201f1f",
+          "on-surface": "#e5e2e1",
+          "on-surface-variant": "#becabd",
+          "on-primary": "#003919",
+          "on-primary-container": "#003115",
+          "on-secondary": "#402d00",
+          "outline-variant": "#3f493f",
+          "error": "#ffb4ab",
+          "background": "#131313",
+        },
+        fontFamily: {
+          "headline": ["Space Grotesk"],
+          "body": ["Manrope"],
+        },
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl border-none shadow-[0_4px_32px_rgba(77,224,130,0.08)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a href="../" class="text-xl font-bold tracking-tighter text-[#4DE082] flex items-center gap-2 no-underline">
+<img alt="Logo" class="h-8 w-auto" src="../logo.png"/>
+<span class="font-headline uppercase tracking-[0.05em] text-sm">From Zero to Hero</span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.05em] text-sm text-[#E5E2E1] hover:text-[#4DE082] transition-colors duration-300" href="../#solutions">Solutions</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.05em] text-sm text-[#E5E2E1] hover:text-[#4DE082] transition-colors duration-300" href="../#process">Process</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.05em] text-sm text-[#EEC058] hover:text-[#4DE082] transition-colors duration-300 border-b border-[#EEC058]/40 pb-0.5" href="./">Marketplace</a>
+</div>
+<a href="../#process" class="no-underline"><button class="bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-headline font-bold uppercase tracking-wider text-xs scale-95 active:scale-90 transition-transform shadow-[0_4px_0_0_#006d36]">Get Your Free Framework</button></a>
+</div>
+</nav>
+
+<!-- Hero -->
+<header class="relative pt-32 pb-20 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-bold tracking-widest uppercase mb-8">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+Marketplace Open
+</div>
+<h1 class="font-headline text-4xl md:text-6xl font-bold leading-[0.95] text-on-surface tracking-tighter mb-6">
+Agent <span class="text-primary italic">Marketplace</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto font-light leading-relaxed mb-6">
+Build your team without jumping straight into a full custom setup. Pick the role you need. Plug it into your workflow. Upgrade into a bigger system when you're ready.
+</p>
+<p class="text-secondary font-headline font-bold text-sm tracking-widest uppercase">
+Start with one agent. Build toward the full team.
+</p>
+</div>
+</header>
+
+<!-- What This Is -->
+<section class="py-20 bg-surface-container-lowest">
+<div class="max-w-3xl mx-auto px-6">
+<span class="text-primary font-headline font-bold tracking-[0.2em] uppercase text-xs mb-6 block text-center">What This Is</span>
+<div class="space-y-5 text-on-surface-variant text-base leading-relaxed">
+<p>Not everybody needs the whole machine on day one.</p>
+<p>Some people need a strong first piece. A research brain. A growth scout. A personal structure agent. Something useful now.</p>
+<p>The marketplace gives you focused agents built for specific jobs so you can get moving without overcommitting, overspending, or pretending you need a giant setup before you've even tested the value.</p>
+</div>
+</div>
+</section>
+
+<!-- Who This Is For -->
+<section class="py-20 bg-surface">
+<div class="max-w-3xl mx-auto px-6">
+<span class="text-primary font-headline font-bold tracking-[0.2em] uppercase text-xs mb-6 block text-center">Who This Is For</span>
+<p class="text-on-surface-variant text-base leading-relaxed mb-6">This is for you if:</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3 text-on-surface-variant text-base">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">arrow_forward</span>
+you want help, but not a full custom install yet
+</li>
+<li class="flex items-start gap-3 text-on-surface-variant text-base">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">arrow_forward</span>
+you have one real bottleneck and want to solve that first
+</li>
+<li class="flex items-start gap-3 text-on-surface-variant text-base">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">arrow_forward</span>
+you want to test how an agent fits into your life or business before going bigger
+</li>
+<li class="flex items-start gap-3 text-on-surface-variant text-base">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">arrow_forward</span>
+you like the F02H approach, but want a simpler entry point
+</li>
+</ul>
+<p class="text-on-surface-variant text-base leading-relaxed">This is not for you if you want a fully mapped, fully integrated system built around your whole operation from day one. That's the <a href="../" class="text-primary hover:text-secondary transition-colors underline underline-offset-4">main F02H service</a>.</p>
+</div>
+</section>
+
+<!-- How To Think About It -->
+<section class="py-20 bg-surface-container-lowest">
+<div class="max-w-3xl mx-auto px-6">
+<span class="text-primary font-headline font-bold tracking-[0.2em] uppercase text-xs mb-6 block text-center">How To Think About It</span>
+<div class="space-y-5 text-on-surface-variant text-base leading-relaxed">
+<p>Think of these like specialist recruits.</p>
+<p>Each one has a clear lane. A clear purpose. A clear role on your board.</p>
+<p>You can start with one. Stack more later. Or use one as the bridge into a full custom F02H build.</p>
+</div>
+</div>
+</section>
+
+<!-- Product Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-5xl mx-auto px-6">
+<span class="text-secondary font-headline font-bold tracking-[0.2em] uppercase text-xs mb-12 block text-center">Current Recruits</span>
+<div class="grid md:grid-cols-2 gap-6">
+
+<!-- Scout -->
+<a href="scout.html" class="group bg-surface-container-low p-8 rounded-xl border border-outline-variant/10 hover:border-primary/40 transition-all block no-underline relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-3">Growth Intelligence</div>
+<div class="flex items-center gap-3 mb-2"><img src="icons/scout.png" alt="Scout" class="w-12 h-12 object-contain" style="filter: drop-shadow(0 0 4px rgba(77,224,130,0.35)) drop-shadow(0 0 12px rgba(77,224,130,0.15));"/><h3 class="font-headline text-2xl font-bold text-primary uppercase tracking-tight">Scout</h3></div>
+<div class="text-2xl font-headline font-bold text-on-surface mb-4">$20</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Your content scout and growth agent. Built to help you find signal, spot angles, track opportunities, and stop posting into the void.</p>
+<span class="text-xs font-bold uppercase tracking-widest text-primary group-hover:text-secondary transition-colors">Explore Scout <span class="material-symbols-outlined text-sm align-middle">arrow_forward</span></span>
+</a>
+
+<!-- Northstar -->
+<a href="northstar.html" class="group bg-surface-container-low p-8 rounded-xl border border-outline-variant/10 hover:border-primary/40 transition-all block no-underline relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-3">Personal Alignment</div>
+<div class="flex items-center gap-3 mb-2"><img src="icons/northstar.png" alt="Northstar" class="w-12 h-12 object-contain" style="filter: drop-shadow(0 0 4px rgba(77,224,130,0.35)) drop-shadow(0 0 12px rgba(77,224,130,0.15));"/><h3 class="font-headline text-2xl font-bold text-primary uppercase tracking-tight">Northstar</h3></div>
+<div class="text-2xl font-headline font-bold text-on-surface mb-4">$20</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Your life and personal growth agent. Built to help you get organized, stay aligned, and stop drifting.</p>
+<span class="text-xs font-bold uppercase tracking-widest text-primary group-hover:text-secondary transition-colors">Explore Northstar <span class="material-symbols-outlined text-sm align-middle">arrow_forward</span></span>
+</a>
+
+<!-- Sage -->
+<a href="sage.html" class="group bg-surface-container-low p-8 rounded-xl border border-outline-variant/10 hover:border-primary/40 transition-all block no-underline relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-3">Research & Tutoring</div>
+<div class="flex items-center gap-3 mb-2"><img src="icons/sage.png" alt="Sage" class="w-12 h-12 object-contain" style="filter: drop-shadow(0 0 4px rgba(77,224,130,0.35)) drop-shadow(0 0 12px rgba(77,224,130,0.15));"/><h3 class="font-headline text-2xl font-bold text-primary uppercase tracking-tight">Sage</h3></div>
+<div class="text-2xl font-headline font-bold text-on-surface mb-4">$20</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Your research and tutoring agent. Built to help you learn faster, think clearer, and break down complex things without wasting hours.</p>
+<span class="text-xs font-bold uppercase tracking-widest text-primary group-hover:text-secondary transition-colors">Explore Sage <span class="material-symbols-outlined text-sm align-middle">arrow_forward</span></span>
+</a>
+
+<!-- Study & Growth Bundle -->
+<a href="study-growth-bundle.html" class="group bg-surface-container-low p-8 rounded-xl border border-secondary/20 hover:border-secondary/50 transition-all block no-underline relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-secondary to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute top-4 right-4 bg-secondary text-on-secondary text-[9px] px-2 py-0.5 font-black uppercase tracking-widest rounded-full">Bundle</div>
+<div class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-3">Structure + Understanding</div>
+<div class="flex items-center gap-3 mb-2"><img src="icons/bundle.png" alt="Study &amp; Growth Bundle" class="w-12 h-12 object-contain" style="filter: drop-shadow(0 0 4px rgba(238,192,88,0.4)) drop-shadow(0 0 12px rgba(238,192,88,0.15));"/><h3 class="font-headline text-2xl font-bold text-secondary uppercase tracking-tight">Study &amp; Growth Bundle</h3></div>
+<div class="text-2xl font-headline font-bold text-on-surface mb-4">$35</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Northstar + Sage together. For people who want structure and understanding at the same time.</p>
+<span class="text-xs font-bold uppercase tracking-widest text-secondary group-hover:text-primary transition-colors">Explore Bundle <span class="material-symbols-outlined text-sm align-middle">arrow_forward</span></span>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- Why Start Here -->
+<section class="py-20 bg-surface-container-lowest">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<span class="text-primary font-headline font-bold tracking-[0.2em] uppercase text-xs mb-6 block">Why Start Here</span>
+<div class="space-y-5 text-on-surface-variant text-base leading-relaxed">
+<p>The marketplace exists for one reason: <span class="text-on-surface font-bold">movement.</span></p>
+<p>Not theory. Not branding fluff. Not a giant promise with no follow-through.</p>
+<p>Just a real starting point that helps you move.</p>
+<p>If it clicks, we build bigger from there.</p>
+</div>
+</div>
+</section>
+
+<!-- Relationship to Main Offer -->
+<section class="py-20 bg-surface relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-primary/3 to-transparent"></div>
+<div class="relative z-10 max-w-3xl mx-auto px-6">
+<div class="bg-surface-container-low p-10 rounded-xl border border-primary/20 text-center">
+<span class="text-secondary font-headline font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Want The Full Thing?</span>
+<p class="text-on-surface-variant text-base leading-relaxed mb-4">The main F02H service is still the top-tier path for people who want a custom system built around their business, workflow, and actual life.</p>
+<p class="text-on-surface font-semibold text-base mb-2">The marketplace is the lighter entry point.</p>
+<p class="text-on-surface-variant text-base leading-relaxed mb-6">The full build is the deeper integration. Different starting points. Same direction.</p>
+<a href="../" class="inline-block border border-primary/40 text-primary px-8 py-3 rounded-lg font-headline font-bold uppercase tracking-wider text-xs hover:bg-primary/10 transition-colors no-underline">View Full Service</a>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-24 relative overflow-hidden bg-primary/5">
+<div class="max-w-3xl mx-auto px-6 text-center">
+<h2 class="text-3xl md:text-4xl font-headline font-bold mb-8 leading-tight">Start with the role you <span class="text-primary italic">need most.</span></h2>
+<div class="space-y-2 text-on-surface-variant text-base mb-10">
+<p>If your problem is growth, start with <a href="scout.html" class="text-primary hover:text-secondary transition-colors font-semibold no-underline">Scout</a>.</p>
+<p>If your problem is structure, start with <a href="northstar.html" class="text-primary hover:text-secondary transition-colors font-semibold no-underline">Northstar</a>.</p>
+<p>If your problem is clarity, start with <a href="sage.html" class="text-primary hover:text-secondary transition-colors font-semibold no-underline">Sage</a>.</p>
+<p>If your problem is both structure and learning, start with the <a href="study-growth-bundle.html" class="text-secondary hover:text-primary transition-colors font-semibold no-underline">bundle</a>.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="scout.html" class="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-4 rounded-lg font-headline font-bold uppercase tracking-widest text-xs hover:shadow-[0_0_20px_rgba(77,224,130,0.4)] transition-all shadow-[0_4px_0_0_#006d36] no-underline">Explore Scout <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#0E0E0E] py-12 px-6 border-t border-[#4DE082]/15">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="text-lg font-black text-[#EEC058] font-headline uppercase tracking-tighter">From Zero to Hero</span>
+</div>
+<p class="font-['Manrope'] text-xs text-[#E5E2E1]/60 text-center md:text-left">
+&copy; 2026 From Zero to Hero &mdash; Done-For-You Automation. Built in the Sacred Grove.
+</p>
+<div class="flex gap-6">
+<a class="font-['Manrope'] text-xs text-[#E5E2E1]/60 hover:text-[#EEC058] transition-colors opacity-80 hover:opacity-100 no-underline" href="../privacy.html">Privacy Policy</a>
+<a class="font-['Manrope'] text-xs text-[#E5E2E1]/60 hover:text-[#EEC058] transition-colors opacity-80 hover:opacity-100 no-underline" href="../terms.html">Terms of Service</a>
+<a class="font-['Manrope'] text-xs text-[#E5E2E1]/60 hover:text-[#EEC058] transition-colors opacity-80 hover:opacity-100 no-underline" href="mailto:lilaplayofgod@gmail.com">Contact Us</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
